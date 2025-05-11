@@ -1,0 +1,19 @@
+{
+  "name": "html-css",
+  "version": "1.0.0",
+  "main": "demo.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "vite": "^6.2.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7"
+  }
+}

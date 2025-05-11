@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Vé Nhà Hàng</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Ứng Dụng Đặt Vé Nhà Hàng</h1>
+    </header>
+    
+    <section id="restaurant-list">
+        <h2>Danh Sách Nhà Hàng</h2>
+        <div class="restaurant" onclick="openBookingForm('Nhà Hàng A')">
+            <h3>Nhà Hàng A</h3>
+            <p>Địa chỉ: 123 Đường ABC, Hà Nội</p>
+        </div>
+        <div class="restaurant" onclick="openBookingForm('Nhà Hàng B')">
+            <h3>Nhà Hàng B</h3>
+            <p>Địa chỉ: 456 Đường XYZ, TP.HCM</p>
+        </div>
+    </section>
+    
+    <section id="booking-form">
+        <h2>Đặt Chỗ</h2>
+        <p id="selected-restaurant"></p>
+        <div class="form-group">
+            <label for="name">Tên:</label>
+            <input type="text" id="name">
+        </div>
+        
+        <div class="form-group">
+            <label for="people">Số người:</label>
+            <input type="number" id="people">
+        </div>
+        
+        <button onclick="submitBooking()">Xác nhận</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
